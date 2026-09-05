@@ -1,141 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ruwantha M subasinghe</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>R15 | Connect With Us</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            min-height: 100vh;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background:
+                radial-gradient(circle at top, #252525 0%, #0b0b0b 45%, #000000 100%);
+
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+
+            padding: 25px;
         }
 
         .card {
-            width: 350px;
-            background: white;
-            padding: 35px 25px;
-            border-radius: 25px;
+            width: 100%;
+            max-width: 390px;
+
+            background: rgba(255, 255, 255, 0.97);
+
+            border-radius: 28px;
+
+            padding: 35px 25px 30px;
+
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.45);
+
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        .profile {
-    width: 110px;
-    height: 110px;
-    margin: auto;
-    border-radius: 50%;
-    overflow: hidden;
-}
+        /* LOGO */
 
-.profile img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+        .logo {
+            width: 135px;
+            height: 135px;
+
+            margin: 0 auto 12px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #000;
+
+            border-radius: 50%;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+        }
+
+        /* COMPANY NAME */
 
         h1 {
-            margin-bottom: 5px;
+            margin: 10px 0 5px;
+
+            font-size: 30px;
+
+            letter-spacing: 2px;
+
+            color: #111;
         }
 
-        .job {
+        .tagline {
+            margin: 0 0 25px;
+
             color: #777;
-            margin-bottom: 25px;
+
+            font-size: 14px;
+
+            letter-spacing: 0.5px;
         }
+
+        /* BUTTONS */
 
         .link {
-            display: block;
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+
             text-decoration: none;
+
             color: white;
-            padding: 14px;
-            margin: 12px 0;
-            border-radius: 12px;
-            font-size: 17px;
+
+            padding: 15px;
+
+            margin: 13px 0;
+
+            border-radius: 14px;
+
+            font-size: 16px;
+
             font-weight: bold;
+
+            transition: all 0.25s ease;
+
+            box-shadow:
+                0 5px 12px rgba(0, 0, 0, 0.12);
         }
+
+        .link i {
+            font-size: 22px;
+
+            width: 28px;
+
+            margin-right: 10px;
+        }
+
+        .link:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* FACEBOOK */
 
         .facebook {
             background: #1877F2;
         }
 
+        /* INSTAGRAM */
+
         .instagram {
-            background: #E1306C;
+            background: linear-gradient(
+                45deg,
+                #feda75,
+                #d62976,
+                #962fbf,
+                #4f5bd5
+            );
         }
+
+        /* TIKTOK */
 
         .tiktok {
             background: #111111;
         }
 
+        /* WHATSAPP */
+
         .whatsapp {
             background: #25D366;
         }
+
+        /* GOOGLE MAPS */
 
         .location {
             background: #EA4335;
         }
 
-        .link:hover {
-            opacity: 0.85;
+        /* WEBSITE */
+
+        .website {
+            background: #222222;
+
+            cursor: default;
         }
 
-.link i {
-    font-size: 22px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
+        .website:hover {
+            transform: translateY(-2px);
+        }
+
+        .coming-soon {
+            position: absolute;
+
+            right: 12px;
+
+            font-size: 10px;
+
+            font-weight: normal;
+
+            background: rgba(255,255,255,0.18);
+
+            padding: 4px 7px;
+
+            border-radius: 6px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            margin-top: 25px;
+
+            font-size: 12px;
+
+            color: #999;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 450px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 30px 20px 25px;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
     <div class="card">
 
-        <div class="profile">
-    <img src="R15.png" alt="Oshada Basnayake Logo">
-</div>
+        <!-- R15 LOGO -->
 
-        <h1>Ruwantha M subasinghe</h1>
+        <div class="logo">
 
-        <p class="job">qs engineer</p>
+            <img src="R15.png"
+                 alt="R15 Logo">
 
-        <a class="link facebook" href="https://www.facebook.com/share/1JKsuP4AY1/">
-    <i class="fa-brands fa-facebook"></i>
-    Facebook
-</a>
+        </div>
 
-<a class="link instagram" href="https://www.instagram.com/rfifteen_construction?igsi=MWVvaGwwMmN6NzZm">
-    <i class="fa-brands fa-instagram"></i>
-    Instagram
-</a>
 
-<a class="link tiktok" href="https://www.tiktok.com/@rfifteenconstruction?_r=1&_t=ZS-99O1KMtqHTw">
-    <i class="fa-brands fa-tiktok"></i>
-    TikTok
-</a>
+        <!-- COMPANY NAME -->
 
-<a class="link whatsapp" href="https://wa.me/94770475655">
-    <i class="fa-brands fa-whatsapp"></i>
-    WhatsApp
-</a>
+        <h1>R15</h1>
 
-<a class="link location" href="https://maps.app.goo.gl/UZwUhP6ZKuDZ9USJ9">
-    <i class="fa-solid fa-location-dot"></i>
-    My Location
-</a>
+        <p class="tagline">
+            Connect With Us
+        </p>
+
+
+        <!-- COMPANY WEBSITE -->
+
+        <a class="link website"
+           href="#"
+           onclick="return false;">
+
+            <i class="fa-solid fa-globe"></i>
+
+            Company Website
+
+        </a>
+
+
+        <!-- FACEBOOK -->
+
+        <a class="link facebook"
+           href="https://www.facebook.com/share/1JKsuP4AY1/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+            Facebook
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a class="link instagram"
+           href="https://www.instagram.com/rfifteen_construction?igsi=MWVvaGwwMmN6NzZm"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-brands fa-instagram"></i>
+
+            Instagram
+
+        </a>
+
+
+        <!-- TIKTOK -->
+
+        <a class="link tiktok"
+           href="https://www.tiktok.com/@rfifteenconstruction?_r=1&_t=ZS-99O1KMtqHTw"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-brands fa-tiktok"></i>
+
+            TikTok
+
+        </a>
+
+
+        <!-- WHATSAPP -->
+
+        <a class="link whatsapp"
+           href="https://wa.me/94770475655"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            WhatsApp
+
+        </a>
+
+
+        <!-- LOCATION -->
+
+        <a class="link location"
+           href="https://maps.app.goo.gl/oFXPx374QtV3ExX87"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Our Location
+
+        </a>
+
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            © 2026 R15. All Rights Reserved.
+
+        </div>
 
     </div>
-
 
 </body>
 
